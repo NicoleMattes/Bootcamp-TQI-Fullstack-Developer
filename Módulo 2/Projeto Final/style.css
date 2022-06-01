@@ -5,6 +5,8 @@ body {
     padding: 0;
     color: white;
     font-family: 'Indie Flower', cursive;
+    background-color: #21182e;
+
 }
 
 /* HEADER */
@@ -52,7 +54,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: .5s cubic-bezier(0.55, 0.025, 0.675, 0.97);
+    transition: 0.5s cubic-bezier(0.55, 0.025, 0.675, 0.97);
 }
 
 a:hover{
@@ -200,4 +202,143 @@ a:hover{
 #toggle:checked ~ .menu-itens{
     visibility: visible;
     opacity: 1;
+}
+
+
+/* CARDS */
+
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+
+}
+
+.card {
+    height: 300px;
+    width: 400px;
+    margin: 3rem 0 0 0;
+    background-image: url('./img/room.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(0.6);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-text {
+    width: 40%;
+    letter-spacing: 1px;
+    color: rgb(109, 109, 109)
+}
+
+.card-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-wrapper::before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    display: block;
+    border: 1px solid white;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.card-wrapper h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    transform: 0.3s;
+}
+
+.card-wrapper p {
+    font-size: 0;
+    visibility: hidden;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3;
+}
+
+.card:hover {
+    filter: unset;
+}
+
+.card:hover > .card-wrapper::before {
+    opacity: 1;
+    width: 370px;
+    height: 270px;
+}
+
+/* FOOTER */
+
+.footer {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #96c8fb;
+}
+
+/* RESPANSIVO */
+
+@media (max-width: 800px) {
+    .social-media {
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        margin-top: 0;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .container .card-container:nth-child(1),
+    .container .card-container:nth-child(3) {
+        flex-direction: column-reverse;
+    }
+
+    .card {
+        height: 250px;
+        width: 250px;
+    }
+
+    .card-text {
+        width: 90%;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .card:hover > .card-wrapper::before {
+        height: 190px;
+        width: 190px;
+    }
 }

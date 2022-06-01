@@ -52,7 +52,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.5s cubic-bezier(0.55, 0.025, 0.675, 0.97);
+    transition: .5s cubic-bezier(0.55, 0.025, 0.675, 0.97);
 }
 
 a:hover{

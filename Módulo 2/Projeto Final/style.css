@@ -22,4 +22,31 @@ body {
     position: relative;
 }
 
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.social-midia{
+    margin-top: 1rem;
+    display: flex;
+}
+
+.social-midia a{
+    text-decoration: nome;
+    color: white;
+    font-size: 24px;
+    padding: 1rem 4rem;
+    border: 1px solid white;
+    min-width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s cubic-bezier(0.55, 0.025, 0.675, 0.97)
+}
 

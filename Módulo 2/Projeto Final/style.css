@@ -27,7 +27,9 @@ body {
 
 .info {
     text-transform: uppercase;
+    
     letter-spacing: 4px;
+    color: rgb(109 0 119);
     text-shadow: rgb(109, 0, 119) 1px 1px 3px;
     transition: 0.5s ease-in-out;
     animation: shadowTransition 8s ease-in-out infinite;
@@ -46,7 +48,7 @@ body {
 
 .social-midia a {
     text-decoration: nome;
-    color: white;
+    color: rgb(109 0 119);
     text-shadow: rgb(109, 0, 119) 1px 1px 2px;
     font-size: 32px;
     padding: 1rem 5rem;
@@ -63,7 +65,7 @@ body {
 
 
 a:hover{
-    color: rgb(109, 0, 119); 
+    color: rgb(0, 119, 119); 
     font-size: 29px;
     letter-spacing: 1px;
     background-color: white;
@@ -222,8 +224,8 @@ a:hover{
     top: 20px;
     right: 30px;
     background: transparent;
-    height: 40px;
-    width: 40px;
+    height: 1px;
+    width: 1px;
     border-radius: 50%;
     box-shadow: 0px 0px 0px 0px white;
     z-index: -1;

@@ -245,7 +245,8 @@ a:hover{
 .card-text {
     width: 40%;
     letter-spacing: 1px;
-    color: rgb(109, 109, 109)
+    color: rgb(255, 255, 255);
+    font-size: 20px;
 }
 
 .card-wrapper {

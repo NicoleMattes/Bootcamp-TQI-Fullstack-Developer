@@ -1,4 +1,12 @@
+elemento{
+--corAleatoria1: random(255);
+--corAleatoria2: random(255);
+--corAleatoria3: random(255);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
 
 body {
     margin: 0;
@@ -53,7 +61,7 @@ body {
     font-size: 32px;
     padding: 1rem 5rem;
     border: 3px solid white;
-    box-shadow: 5px 4px 4px black;
+    /* box-shadow: 5px 4px 4px black; */
     border-radius: 1px;
     min-width: 6rem;
     display: flex;
@@ -71,6 +79,7 @@ a:hover{
     background-color: white;
     
 }
+
 
 @keyframes shadowTransition {
     0%{
@@ -109,11 +118,11 @@ a:hover{
 }
 
 @keyframes borderTransition {
-    0%{
+    10%{
         box-shadow: 0 0 0.5em rgb(109, 0, 119); 
         text-shadow: rgb(109, 0, 119) 1px 1px 3px; 
     }
-    10%{
+     10%{
         box-shadow: 0 0 0.5em rgb(255, 239, 8);
         text-shadow: rgb(255, 239, 8) 1px 1px 3px;
     }
@@ -151,7 +160,7 @@ a:hover{
     }
     100%{
         box-shadow: 0 0 0.5em rgb(109, 0, 119); 
-        text-shadow: rgb(109, 0, 119) 1px 1px 3px;
+        text-shadow: rgb(109, 0, 119) 1px 1px 3px; 
     }
 }
     
@@ -224,8 +233,8 @@ a:hover{
     top: 20px;
     right: 30px;
     background: transparent;
-    height: 40px;
-    width: 40px;
+    height: 1px;
+    width: 1px;
     border-radius: 50%;
     box-shadow: 0px 0px 0px 0px white;
     z-index: -1;
@@ -244,7 +253,7 @@ a:hover{
     z-index: 2;
     opacity: 0;
     visibility: hidden;
-    transition: 400ms ease-in-out 0s;
+    transition: 400ms ease-in-out 150ms;
 }
 
 .menu-itens ul{
@@ -289,6 +298,7 @@ a:hover{
 #toggle:checked ~ .menu {
     box-shadow: 0px 0px 0px 100vmax rgb(252, 222, 255);
     z-index: 1;
+    
 }
 
 #toggle:checked ~ .menu-itens{

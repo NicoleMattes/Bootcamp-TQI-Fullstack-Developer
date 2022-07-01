@@ -1,5 +1,5 @@
 * {
-    padding: 0;
+    padding: 3px;
     margin: 0;
     box-sizing: border-box;
 }
@@ -36,8 +36,8 @@ body {
 }
 
 .card {
-    height: calc(33.333% - 10px);
-    width: calc(7.1% - 10px);
+    height: calc(29.333% - 10px);
+    width: calc(7% - 10px);
     margin: 5px;
     position: relative;
     /* box-shadow: 1px 1px 1px white; */
@@ -70,4 +70,5 @@ body {
 
 .card.flip {
     transform: rotateY(180deg);
+
 }

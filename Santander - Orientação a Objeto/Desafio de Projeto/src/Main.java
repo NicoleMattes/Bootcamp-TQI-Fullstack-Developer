@@ -2,6 +2,7 @@ import desafio.Conteudo;
 import desafio.Curso;
 import desafio.Mentoria;
 
+import java.sql.Connection;
 import java.time.LocalDate;
 
 public class Main {
@@ -16,6 +17,8 @@ public class Main {
         curso2.setTitulo("Curso java");
         curso2.setDescricao("descrição curso JS");
         curso2.setCargaHoraria(30);
+
+        Conteudo conteudo = new Curso();
 
         Mentoria mentoria1 = new Mentoria();
         mentoria1.setTitulo("Mentoria Java");
@@ -32,7 +35,7 @@ public class Main {
             public double calcularxp() {
                 return 0;
             }
-        }
+        };
 
     }
 }
